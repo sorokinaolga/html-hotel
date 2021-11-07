@@ -1,0 +1,11 @@
+{
+  "name": "hotel-website",
+  "version": "1.0.0",
+  "description": "hotel-website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "sorokinaolga",
+  "license": "ISC"
+}
