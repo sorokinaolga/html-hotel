@@ -41,8 +41,7 @@ const config = {
     open: true,
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.pug$/,
         loader: 'pug-loader',
         options: {
@@ -72,18 +71,12 @@ const config = {
         ],
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(jpe?g|svg|png|gif|ico|eot|ttf|woff2?)(\?v=\d+\.\d+\.\d+)?$/i,
+        type: 'asset/resource',
         exclude: [
           path.resolve(__dirname, './src/img/'),
           path.resolve(__dirname, './src/components/'),
-        ],
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/',
-          },
-        }],
+        ]
       },
       {
         test: /\.(png|gif|svg|jpe?g)$/,
