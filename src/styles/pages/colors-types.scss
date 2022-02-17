@@ -3,6 +3,7 @@
   background-color: #f4f4f6;
 
   &__row {
+    padding: 130px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -33,7 +34,7 @@
     letter-spacing: -1px;
     font-family: $ff-secondary;
     font-size: 18px;
-    color: $font-palette;
+    color: $ff-palette;
   }
   &__title {
     letter-spacing: initial;
@@ -82,13 +83,13 @@
   }
   &__title {
     font-family: $ff-primary;
-    color: $font-palette-25;
+    color: $ff-palette-25;
     margin-right: 30px;
     text-align: right;
     min-width: 37px;
   }
   &__description {
     font-family: $ff-secondary;
-    color: $font-palette;
+    color: $ff-palette;
   }
 }

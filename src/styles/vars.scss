@@ -5,9 +5,19 @@ $palette-primary: #bc9cff;
 $palette-primary-light: #efefff;
 $palette-secondary: #6fcf97;
 
-$font-palette: #1f2041;
-$font-palette-75: rgba($font-palette, 0.75);
-$font-palette-50: rgba($font-palette, 0.5);
-$font-palette-25: rgba($font-palette, 0.25);
-$font-palette-10: rgba($font-palette, 0.1);
-$font-palette-5: rgba($font-palette, 0.05);
+$ff-palette: #1f2041;
+$ff-palette-75: rgba($ff-palette, 0.75);
+$ff-palette-50: rgba($ff-palette, 0.5);
+$ff-palette-25: rgba($ff-palette, 0.25);
+$ff-palette-10: rgba($ff-palette, 0.1);
+$ff-palette-5: rgba($ff-palette, 0.05);
+
+@function px-to-rem($size, $baseSize: $ff-base-size) {
+  @return $size / $baseSize#{rem};
+}
+
+$ff-base-size: 14px;
+$ff-xs: px-to-rem(10px);
+$ff-sm: px-to-rem(12px);
+$ff-md: px-to-rem(19px);
+$ff-lg: px-to-rem(24px);
