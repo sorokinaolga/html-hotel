@@ -1,0 +1,12 @@
+mixin input(options = {})
+  - const { label, type = "" } = options
+  label.input-group
+    div(class= label ? "input-group__title" : "visually-hidden")
+      = label
+      if type
+        .input-group__type= type
+    - let inputClass = "input-group__input"
+    - const isHoverState = type.indexOf("hover") !== -1
+    if isHoverState
+      - inputClass += " input-group__input--hovered"
+    input(class= inputClass)&attributes(attributes)

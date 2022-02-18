@@ -1,0 +1,43 @@
+@import "../../styles/vars.scss";
+
+.input-group {
+  flex-grow: 1;
+  font-family: $ff-primary;
+  font-size: $ff-sm;
+  &__title {
+    font-size: $ff-xs;
+    text-transform: uppercase;
+    line-height: 1.25;
+    font-weight: bold;
+    color: $ff-palette;
+    margin-bottom: 2px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__type {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $ff-palette-50;
+  }
+  &__input {
+    width: 100%;
+    border-radius: 4px;
+    padding: 13px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $ff-palette-25;
+    color: $ff-palette-75;
+    transition: border-color 0.2s ease, color 0.2s ease;
+    background-color: #fff;
+    &::placeholder {
+      color: $ff-palette-25;
+    }
+    &:hover,
+    &:focus,
+    &--hovered {
+      border-color: $ff-palette-50;
+      outline: none;
+    }
+  }
+}
