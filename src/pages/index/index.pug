@@ -7,51 +7,16 @@ html(lang='ru')
     title Сайт отеля
   body
     include ../../components/input/input
+    include ../colors-types/colors-types
 
-    h1 Сайт отеля
+    block colors-types
 
-    - 
-      const colors = [
-        {title: "Dark Shade 100%", value: "#1F2041", color: "#1F2041"},
-        {title: "Dark Shade 75%", value: "#1F2041", color: "rgba(31, 32, 65, 0.75)"},
-        {title: "Dark Shade 50%", value: "#1F2041", color: "rgba(31, 32, 65, 0.5)"},
-        {title: "Dark Shade 25%", value: "#1F2041", color: "rgba(31, 32, 65, 0.25)"},
-        {title: "Dark Shade 5%", value: "#1F2041", color: "rgba(31, 32, 65, 0.05)"},
-        {title: "Purple", value: "#BC9CFF", color: "#BC9CFF"},
-        {title: "Green", value: "#6FCF97", color: "#6FCF97"},
-      ]
-    - 
-      const types = [
-        {title: "H1", description: "This one is the sub-section or widget title", style: "section-title"},
-        {title: "H2", description: "Next one is the item title inside widgets", style: "item-title"},
-        {title: "H3", description: "This is a label or CTA text", style: "label"},
-        {title: "Body", description: "This is the body text which is used for most of the design, like paragraphs, lists, etc.", style: "text"},
-      ]
-    main.ui-page
-      .container
-        .ui-page__row
-          section.ui-page__column
-            ul.colors-list
-              each item in colors
-                - const {title = "", value = "", color = ""} = item
-                li.colors-list__item
-                  .colors-list__square(style=`background-color: ${color}`)
-                  .colors-list__description
-                    p.colors-list__title= title
-                    p.colors-list__subtitle= value
-          section.ui-page__column
-              ul.types-list
-                each item in types
-                  - const {title = "", description = "", style = "body-text"} = item
-                  li(class= `types-list__item types-list__item--${style}`)
-                    p.types-list__title= title
-                    p.types-list__description= description
-        .form-elements
-          section.form-elements__column
-            +input({label: "Text Field", type: "default"})(placeholder="Email")
-            +input({label: "Text Field", type: "hover/focus"})(placeholder="Email" value="This is pretty awesome")
-            +input({label: "Masked text field", type: "default"})(placeholder="ДД.ММ.ГГГГ" name="user-bday")
-          section
-            +input({label: "Text Field", type: "default"})(placeholder="Email")
-          section
-            +input({label: "Text Field", type: "default"})(placeholder="Email")
+    .form-elements
+      section.form-elements__column
+        +input({label: "Text Field", type: "default"})(placeholder="Email")
+        +input({label: "Text Field", type: "hover/focus"})(placeholder="Email" value="This is pretty awesome")
+        +input({label: "Masked text field", type: "default"})(placeholder="ДД.ММ.ГГГГ" name="user-bday")
+      section
+        +input({label: "Text Field", type: "default"})(placeholder="Email")
+      section
+        +input({label: "Text Field", type: "default"})(placeholder="Email")
