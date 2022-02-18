@@ -16,8 +16,8 @@ $ff-palette-5: rgba($ff-palette, 0.05);
   @return $size / $baseSize#{rem};
 }
 
-$ff-base-size: 14px;
-$ff-xs: px-to-rem(10px);
-$ff-sm: px-to-rem(12px);
+$ff-base-size: 16px;
+$ff-xs: px-to-rem(12px);
+$ff-sm: px-to-rem(14px);
 $ff-md: px-to-rem(19px);
 $ff-lg: px-to-rem(24px);
