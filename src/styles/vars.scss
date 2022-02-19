@@ -12,6 +12,9 @@ $ff-palette-25: rgba($ff-palette, 0.25);
 $ff-palette-10: rgba($ff-palette, 0.1);
 $ff-palette-5: rgba($ff-palette, 0.05);
 
+$gradient-primary: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+$gradient-secondary: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+
 @function px-to-rem($size, $baseSize: $ff-base-size) {
   @return $size / $baseSize#{rem};
 }
