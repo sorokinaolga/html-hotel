@@ -7,6 +7,7 @@ html(lang='ru')
     title Сайт отеля
   body
     include ../../components/input/input
+    include ../../components/checkbox/checkbox
     include ../colors-types/colors-types
 
     block colors-types
@@ -16,7 +17,15 @@ html(lang='ru')
         +input({label: "Text Field", type: "default"})(placeholder="Email")
         +input({label: "Text Field", type: "hover/focus"})(placeholder="Email" value="This is pretty awesome")
         +input({label: "Masked text field", type: "default"})(placeholder="ДД.ММ.ГГГГ" name="user-bday")
-      section
+      section.form-elements__column
         +input({label: "Text Field", type: "default"})(placeholder="Email")
-      section
+        +checkbox({label: "Можно курить", name: "conditions", value: "smoke"})
+        +checkbox({label: "Можно с питомцами", name: "conditions", value: "pets", checked: true})
+        +checkbox({label: "Можно пригласить гостей (до&nbsp;10&nbsp;человек)", name: "conditions", value: "guests", checked: true})
+      section.form-elements__column
         +input({label: "Text Field", type: "default"})(placeholder="Email")
+      section.form-elements__column
+      section.form-elements__column
+        +checkbox({label: "Широкий коридор", name: "availability", value: "wide-corridor", details: "Ширина коридоров в&nbsp;номере не&nbsp;менее 91&nbsp;см"})
+        +checkbox({label: "Помощник для инвалидов", name: "availability", value: "assistant", details: "На&nbsp;1&nbsp;этаже вас встретит специалист и&nbsp;проводит до&nbsp;номера"})
+      section.form-elements__column

@@ -4,6 +4,7 @@
   flex-grow: 1;
   font-family: $ff-primary;
   font-size: $ff-sm;
+
   &__title {
     font-size: $ff-xs;
     text-transform: uppercase;
@@ -15,11 +16,13 @@
     display: flex;
     justify-content: space-between;
   }
+
   &__type {
     font-weight: normal;
     text-transform: uppercase;
     color: $ff-palette-50;
   }
+
   &__input {
     width: 100%;
     border-radius: 4px;
@@ -30,9 +33,11 @@
     color: $ff-palette-75;
     transition: border-color 0.2s ease, color 0.2s ease;
     background-color: #fff;
+
     &::placeholder {
       color: $ff-palette-25;
     }
+
     &:hover,
     &:focus,
     &--hovered {

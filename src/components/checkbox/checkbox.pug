@@ -1,0 +1,10 @@
+mixin checkbox(options)
+  - const {label, name, value, checked = false, details} = options;
+  label.checkbox
+    input.visually-hidden.checkbox__input(type="checkbox" name= name value= value checked= checked)
+    .checkbox__box
+      .checkbox__check
+    div(class= details ? "checkbox__label--with-details" : "checkbox__label")
+      != label
+      if details
+        p.checkbox__details!= details
