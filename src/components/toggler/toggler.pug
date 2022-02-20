@@ -1,0 +1,6 @@
+mixin toggler(options) 
+  - const {label, name, value, checked = false} = options;
+  label.toggler
+    input.visually-hidden.toggler__input(type="checkbox" name= name value= value checked= checked)
+    span.toggler__checkbox
+    = label

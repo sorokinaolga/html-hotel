@@ -10,6 +10,7 @@ html(lang='ru')
     include ../../components/checkbox/checkbox
     include ../../components/radio-button/radio-button
     include ../../components/label/label
+    include ../../components/toggler/toggler
     include ../colors-types/colors-types
 
     block colors-types
@@ -29,6 +30,8 @@ html(lang='ru')
           +radio-button({name: "gender", value: "male", label: "Мужчина", checked: true})
           +radio-button({name: "gender", value: "female", label: "Женщина"})
         +label({title: "Toggle"})
+        +toggler({label: "Получать спецпредложения", name: "special-offers", checked: true})
+        +toggler({label: "Получать спецпредложения", name: "special-offers"})
         +label({title: "Like Button"})
         +label({title: "Rate Button"})
       section.form-elements__column
