@@ -8,6 +8,7 @@ html(lang='ru')
   body
     include ../../components/input/input
     include ../../components/checkbox/checkbox
+    include ../../components/radio-button/radio-button
     include ../colors-types/colors-types
 
     block colors-types
@@ -22,6 +23,10 @@ html(lang='ru')
         +checkbox({label: "Можно курить", name: "conditions", value: "smoke"})
         +checkbox({label: "Можно с питомцами", name: "conditions", value: "pets", checked: true})
         +checkbox({label: "Можно пригласить гостей (до&nbsp;10&nbsp;человек)", name: "conditions", value: "guests", checked: true})
+
+        .form-elements__element
+          +radio-button({name: "gender", value: "male", label: "Мужчина", checked: true})
+          +radio-button({name: "gender", value: "female", label: "Женщина"})
       section.form-elements__column
         +input({label: "Text Field", type: "default"})(placeholder="Email")
       section.form-elements__column

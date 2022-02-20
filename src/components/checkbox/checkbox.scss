@@ -63,6 +63,7 @@
     &:checked {
       & + .checkbox__box {
         border: 1px solid $palette-primary;
+
         .checkbox__check {
           display: block;
         }

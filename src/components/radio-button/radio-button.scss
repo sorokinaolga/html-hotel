@@ -1,0 +1,59 @@
+@import "../../styles/vars.scss";
+
+.radio-button {
+  font-size: $ff-sm;
+  line-height: 1.71;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  &__box {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid $ff-palette-25;
+    border-radius: 0.625rem;
+    cursor: pointer;
+  }
+
+  &__check {
+    display: none;
+    margin: 0.2rem auto;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.625rem;
+    background: $gradient-primary;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    color: $ff-palette-50;
+    cursor: pointer;
+  }
+
+  &__input {
+    &:focus + .radio-button__box {
+      transition: box-shadow 0.25s ease-in-out;
+      box-shadow: 0 0.3rem 0.3rem $ff-palette-25;
+    }
+
+    &:checked + .radio-button__box {
+      border-color: $palette-primary;
+
+      .radio-button__check {
+        display: block;
+      }
+
+      .radio-button__description {
+        color: $ff-palette-75;
+      }
+    }
+
+    &:checked ~ .radio-button__description {
+      color: $ff-palette-75;
+    }
+  }
+}

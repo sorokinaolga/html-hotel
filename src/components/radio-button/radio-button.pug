@@ -1,0 +1,8 @@
+mixin radio-button(options = {})
+  - const {name, value, label, checked} = options;
+  .radio-button
+    label.radio-button__label
+      input.visually-hidden.radio-button__input(type="radio" name= name value= value checked= checked)
+      .radio-button__box
+        .radio-button__check
+      span.radio-button__description= label
