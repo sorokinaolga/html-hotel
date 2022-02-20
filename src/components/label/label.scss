@@ -1,0 +1,19 @@
+@import "../../styles/vars.scss";
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  text-transform: uppercase;
+  font-size: $ff-xs;
+  line-height: 1.22;
+
+  &__title {
+    color: $ff-palette;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    color: $ff-palette-50;
+  }
+}

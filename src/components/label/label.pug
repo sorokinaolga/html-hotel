@@ -1,0 +1,6 @@
+mixin label(options = {})
+  - const {title, subtitle} = options;
+  label.label
+    span.label__title!= title
+    if subtitle
+      span.label__subtitle!= subtitle
