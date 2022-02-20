@@ -35,6 +35,10 @@
   }
 
   &__input {
+    &:hover + .radio-button__box {
+      border-color: $ff-palette-50;
+    }
+
     &:focus + .radio-button__box {
       transition: box-shadow 0.25s ease-in-out;
       box-shadow: 0 0.3rem 0.3rem $ff-palette-25;
