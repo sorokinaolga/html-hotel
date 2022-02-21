@@ -1,20 +1,3 @@
 @import "base.scss";
 @import "pages/colors-types.scss";
-
-.form-elements {
-  padding: 140px 141px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 130px;
-
-  &__column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  &__element {
-    display: flex;
-    gap: 20px;
-  }
-}
+@import "pages/form-elements.scss";
