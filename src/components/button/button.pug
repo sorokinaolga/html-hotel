@@ -1,0 +1,11 @@
+mixin button(options = {})
+  - const {style, type, text, size = "small", hovered, withArrow, href, attr} = options;
+  - let buttonClass = `button button--style-${style} button--size-${size}`;
+    if hovered
+      - buttonClass += " button--hovered"
+  - const isButton = ["button", "submit", "reset"].includes(type);
+  - const tag = isButton ? "button" : "a";
+
+  #{tag}(class= buttonClass type= type href= href)&attributes(attr)= text
+    if withArrow
+      i.button--with-arrow.material-icons= "arrow_forward"

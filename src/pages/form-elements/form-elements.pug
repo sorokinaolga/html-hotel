@@ -3,6 +3,7 @@ include ../../components/checkbox/checkbox
 include ../../components/radio-button/radio-button
 include ../../components/label/label
 include ../../components/toggler/toggler
+include ../../components/button/button
 
 .form-elements
   section.form-elements__column
@@ -26,6 +27,17 @@ include ../../components/toggler/toggler
   section.form-elements__column
     +label({title: "Range Slider", subtitle: "5&nbsp;000&#8381;&nbsp;-&nbsp;10&nbsp;000&#8381;"})
     +label({title: "Buttons"})
+    .form-elements__element
+      +button({style: "default", type: "button", text: "Click me"})
+      +button({style: "default", type: "button", text: "Click me", hovered: true})
+    .form-elements__element
+      +button({style: "bordered", type: "button", text: "Click me"})
+      +button({style: "bordered", type: "button", text: "Click me", hovered: true})
+    .form-elements__element
+      +button({style: "textual", type: "button", text: "Click me"})
+      +button({style: "textual", type: "button", text: "Click me", hovered: true})
+    +button({style: "default", type: "button", text: "Перейти к оплате", size: "full", withArrow: true})
+
     +label({title: "Pagination"})
   section.form-elements__column
   section.form-elements__column

@@ -1,0 +1,82 @@
+@import "../../styles/vars.scss";
+
+.button {
+  position: relative;
+  display: inline-grid;
+  outline: none;
+  appearance: none;
+  user-select: none;
+  text-decoration: none;
+  font-family: $ff-primary;
+  font-size: $ff-xs;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 1.375rem;
+  padding: 0.91rem 1.25rem;
+  background: $gradient-primary;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0.3rem 0.3rem $ff-palette-25;
+  }
+
+  &:hover,
+  &--hovered {
+    opacity: 0.5;
+  }
+
+  &--style {
+    &-default {
+      border: none;
+      color: white;
+    }
+
+    &-bordered {
+      padding: 0.78rem 1.125rem;
+      background: linear-gradient(#fff, #fff) padding-box, $gradient-primary border-box;
+      border: 2px solid transparent;
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: $palette-primary;
+    }
+
+    &-textual {
+      border: none;
+      outline: none;
+      padding: 0;
+      line-height: 1rem;
+      display: inline;
+      background: none;
+      color: $palette-primary;
+
+      &:hover,
+      &.button--hovered {
+        opacity: 1;
+        color: $ff-palette-50;
+      }
+
+      &:focus {
+        box-shadow: none;
+        text-shadow: 0 0.3rem 0.3rem $ff-palette-25;
+      }
+    }
+  }
+
+  &--size {
+    &-full {
+      width: 100%;
+    }
+  }
+
+  &--with-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+  }
+}
