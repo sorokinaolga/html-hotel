@@ -44,6 +44,10 @@
 
     &:hover:not(:checked) + .toggler__checkbox {
       border-color: $ff-palette-50;
+
+      &:after {
+        background-color: $ff-palette-50;
+      }
     }
 
     &:focus + .toggler__checkbox {
