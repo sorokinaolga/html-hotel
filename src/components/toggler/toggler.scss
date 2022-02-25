@@ -27,7 +27,7 @@
       width: calc(1.25rem - 8px);
       background-color: $ff-palette-25;
       border-radius: calc((1.25rem - 8px) * 2);
-      transition: left 0.2s, width 0.3s, transform 0.2s;
+      transition: left 0.2s, width 0.3s, transform 0.2s, background-color 0.2s;
     }
   }
 
