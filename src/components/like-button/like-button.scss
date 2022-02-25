@@ -1,0 +1,35 @@
+@import "../../styles/vars.scss";
+
+.like-button {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient($ff-palette-25, $ff-palette-25) border-box;
+  border: 1px solid transparent;
+  font-size: $ff-xxs;
+  color: $ff-palette-25;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $px4 $px10 $px3 $px4;
+  border-radius: $px10;
+  transition: all 0.2s ease;
+
+  &--active {
+    background: linear-gradient(#fff, #fff) padding-box, $gradient-primary border-box;
+    color: $palette-primary;
+  }
+
+  &:hover:not(.like-button--active) {
+    background-color: $ff-palette-50;
+    color: $ff-palette-50;
+  }
+
+  &:focus {
+    transition: box-shadow 0.25s ease-in-out;
+    box-shadow: 0 0.3rem 0.3rem $ff-palette-25;
+  }
+
+  &__icon {
+    font-size: inherit;
+    margin-right: $px7;
+  }
+}

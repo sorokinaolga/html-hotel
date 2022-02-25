@@ -4,6 +4,7 @@ include ../../components/radio-button/radio-button
 include ../../components/label/label
 include ../../components/toggler/toggler
 include ../../components/button/button
+include ../../components/like-button/like-button
 
 .form-elements
   section.form-elements__column
@@ -23,6 +24,9 @@ include ../../components/button/button
     +toggler({label: "Получать спецпредложения", name: "special-offers", checked: true})
     +toggler({label: "Получать спецпредложения", name: "special-offers"})
     +label({title: "Like Button"})
+    .form-elements__element.form-elements__element--gap-min
+      +like-button({count: 2})
+      +like-button({count: 12, isFavorite: true})
     +label({title: "Rate Button"})
   section.form-elements__column
     +label({title: "Range Slider", subtitle: "5&nbsp;000&#8381;&nbsp;-&nbsp;10&nbsp;000&#8381;"})
@@ -37,7 +41,6 @@ include ../../components/button/button
       +button({style: "textual", type: "button", text: "Click me"})
       +button({style: "textual", type: "button", text: "Click me", hovered: true})
     +button({style: "default", type: "button", text: "Перейти к оплате", size: "full", withArrow: true})
-
     +label({title: "Pagination"})
   section.form-elements__column
   section.form-elements__column

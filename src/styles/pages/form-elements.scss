@@ -15,5 +15,9 @@
   &__element {
     display: flex;
     gap: 20px;
+
+    &--gap-min {
+      gap: 10px;
+    }
   }
 }

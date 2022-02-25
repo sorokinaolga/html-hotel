@@ -20,7 +20,14 @@ $gradient-secondary: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
 
 $ff-base-size: 16px;
+$ff-xxs: px-to-rem(10px);
 $ff-xs: px-to-rem(12px);
 $ff-sm: px-to-rem(14px);
 $ff-md: px-to-rem(19px);
 $ff-lg: px-to-rem(24px);
+
+$px3: px-to-rem(3px);
+$px4: px-to-rem(4px);
+$px5: px-to-rem(5px);
+$px7: px-to-rem(7px);
+$px10: px-to-rem(10px);

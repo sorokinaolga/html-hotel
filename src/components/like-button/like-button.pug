@@ -1,0 +1,10 @@
+mixin like-button(options)
+  - const {count= 0, isFavorite= false} = options;
+  - const likeIcon = isFavorite ? "favorite" : "favorite_border"
+  - let likeClass = "like-button"
+  if isFavorite
+    - likeClass += " like-button--active"
+  button(class= likeClass type="button")
+    i.material-icons.like-button__icon= likeIcon
+    span.visually-hidden Количество лайков:
+    = count
