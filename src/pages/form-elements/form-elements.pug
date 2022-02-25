@@ -5,6 +5,7 @@ include ../../components/label/label
 include ../../components/toggler/toggler
 include ../../components/button/button
 include ../../components/like-button/like-button
+include ../../components/rating/rating
 
 .form-elements
   section.form-elements__column
@@ -28,6 +29,9 @@ include ../../components/like-button/like-button
       +like-button({count: 2})
       +like-button({count: 12, isFavorite: true})
     +label({title: "Rate Button"})
+    .form-elements__element
+      +rating(4)
+      +rating(5)
   section.form-elements__column
     +label({title: "Range Slider", subtitle: "5&nbsp;000&#8381;&nbsp;-&nbsp;10&nbsp;000&#8381;"})
     +label({title: "Buttons"})

@@ -1,0 +1,10 @@
+@import "../../styles/vars.scss";
+
+.rating {
+  display: flex;
+  align-items: center;
+  color: $palette-primary;
+  background: $gradient-primary;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

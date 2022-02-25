@@ -1,0 +1,5 @@
+mixin rating(count)
+  .rating
+    - for (let i = 0; i < 5; i++)
+      - const icon = i < count ? "star" : "star_border";
+      i.material-icons= icon

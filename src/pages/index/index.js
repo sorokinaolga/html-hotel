@@ -7,3 +7,4 @@ import '../../components/label/label.scss';
 import '../../components/toggler/toggler.scss';
 import '../../components/button/button.scss';
 import '../../components/like-button/like-button.scss';
+import '../../components/rating/rating.scss';
