@@ -9,15 +9,19 @@
   &__column {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: $px20;
+
+    &--two {
+      grid-column: 2/4;
+    }
   }
 
   &__element {
     display: flex;
-    gap: 20px;
+    gap: $px20;
 
     &--gap-min {
-      gap: 10px;
+      gap: $px10;
     }
   }
 }

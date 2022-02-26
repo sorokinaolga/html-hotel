@@ -1,0 +1,12 @@
+@import "../../styles/vars.scss";
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: $px20;
+
+  &__item {
+    padding-bottom: $px20;
+    border-bottom: 1px solid $ff-palette-10;
+  }
+}

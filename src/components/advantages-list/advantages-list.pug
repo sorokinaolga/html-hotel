@@ -1,0 +1,7 @@
+include ../advantage/advantage
+
+mixin advantages-list(items)
+  ul.advantages-list
+    for item in items
+      li.advantages-list__item
+        +advantage(item)

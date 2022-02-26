@@ -1,0 +1,7 @@
+mixin advantage(options)
+  - const {title="", subtitle="", icon=""} = options
+  .advantage
+    i.advantage__icon.material-icons= icon
+    .advantage__description
+      p.advantage__title= title
+      = subtitle

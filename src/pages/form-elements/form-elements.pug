@@ -8,6 +8,7 @@ include ../../components/like-button/like-button
 include ../../components/rating/rating
 include ../../components/paginator/paginator
 include ../../components/bullet-list/bullet-list
+include ../../components/advantages-list/advantages-list
 
 .form-elements
   section.form-elements__column
@@ -57,3 +58,9 @@ include ../../components/bullet-list/bullet-list
   section.form-elements__column
     +label({title: "Bullet list"})
     +bullet-list(["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"])
+  section.form-elements__column
+    +advantages-list([
+      {title: "Комфорт", subtitle: "Шумопоглощающие стены", icon: "insert_emoticon"},
+      {title: "Удобство", subtitle: "Окно в каждой из спален", icon: "location_city"}
+    ])
+  section.form-elements__column.form-elements__column--two

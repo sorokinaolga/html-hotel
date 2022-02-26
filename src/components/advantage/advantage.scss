@@ -1,0 +1,24 @@
+@import "../../styles/vars.scss";
+
+.advantage {
+  display: flex;
+  align-items: center;
+  color: $ff-palette-75;
+  font-size: $ff-sm;
+  line-height: 1.7;
+
+  &__icon {
+    font-size: $px48;
+    background: $gradient-primary;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__description {
+    margin-left: $px10;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+}
