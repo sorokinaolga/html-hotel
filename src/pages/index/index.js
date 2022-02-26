@@ -9,3 +9,4 @@ import '../../components/button/button.scss';
 import '../../components/like-button/like-button.scss';
 import '../../components/rating/rating.scss';
 import '../../components/paginator/paginator.scss';
+import '../../components/bullet-list/bullet-list.scss';

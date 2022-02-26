@@ -7,6 +7,7 @@ include ../../components/button/button
 include ../../components/like-button/like-button
 include ../../components/rating/rating
 include ../../components/paginator/paginator
+include ../../components/bullet-list/bullet-list
 
 .form-elements
   section.form-elements__column
@@ -54,3 +55,5 @@ include ../../components/paginator/paginator
     +checkbox({label: "Широкий коридор", name: "availability", value: "wide-corridor", details: "Ширина коридоров в&nbsp;номере не&nbsp;менее 91&nbsp;см"})
     +checkbox({label: "Помощник для инвалидов", name: "availability", value: "assistant", details: "На&nbsp;1&nbsp;этаже вас встретит специалист и&nbsp;проводит до&nbsp;номера"})
   section.form-elements__column
+    +label({title: "Bullet list"})
+    +bullet-list(["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"])

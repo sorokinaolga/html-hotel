@@ -1,0 +1,28 @@
+@import "../../styles/vars.scss";
+
+.bullet {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: $ff-primary;
+  font-size: $ff-sm;
+  line-height: 1.7;
+  color: $ff-palette-75;
+
+  &__item {
+    position: relative;
+    padding-left: $px20;
+    margin-bottom: $px10;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: $px10;
+      height: $px10;
+      border-radius: 50%;
+      background-color: $ff-palette-25;
+      top: $px6;
+      left: 0;
+    }
+  }
+}
