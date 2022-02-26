@@ -1,5 +1,6 @@
 mixin rating(count)
   .rating
+    span.visually-hidden Рейтинг #{count} из 5
     - for (let i = 0; i < 5; i++)
       - const icon = i < count ? "star" : "star_border";
       i.material-icons= icon
