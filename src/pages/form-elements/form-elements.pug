@@ -6,6 +6,7 @@ include ../../components/toggler/toggler
 include ../../components/button/button
 include ../../components/like-button/like-button
 include ../../components/rating/rating
+include ../../components/paginator/paginator
 
 .form-elements
   section.form-elements__column
@@ -46,6 +47,7 @@ include ../../components/rating/rating
       +button({style: "textual", type: "button", text: "Click me", hovered: true})
     +button({style: "default", type: "button", text: "Перейти к оплате", size: "full", withArrow: true})
     +label({title: "Pagination"})
+    +paginator({countOnPage: 12, countTotal: 180, currentPage: 1})
   section.form-elements__column
   section.form-elements__column
     +label({title: "Rich Checkbox Buttons"})
