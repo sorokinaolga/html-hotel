@@ -17,20 +17,20 @@
   ]
 
 .ui-page
-    .ui-page__row
-      section.ui-page__column
-        ul.colors-list
-          each item in colors
-            - const {title = "", value = "", color = ""} = item
-            li.colors-list__item
-              .colors-list__square(style=`background-color: ${color}`)
-              .colors-list__description
-                p.colors-list__title= title
-                p.colors-list__subtitle= value
-      section.ui-page__column
-          ul.types-list
-            each item in types
-              - const {title = "", description = "", style = "body-text"} = item
-              li(class= `types-list__item types-list__item--${style}`)
-                p.types-list__title= title
-                p.types-list__description= description
+  .ui-page__row
+    section.ui-page__column
+      ul.colors-list
+        each item in colors
+          - const {title = "", value = "", color = ""} = item
+          li.colors-list__item
+            .colors-list__square(style=`background-color: ${color}`)
+            .colors-list__description
+              p.colors-list__title= title
+              p.colors-list__subtitle= value
+    section.ui-page__column
+        ul.types-list
+          each item in types
+            - const {title = "", description = "", style = "body-text"} = item
+            li(class= `types-list__item types-list__item--${style}`)
+              p.types-list__title= title
+              p.types-list__description= description
