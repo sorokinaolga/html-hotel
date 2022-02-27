@@ -43,10 +43,14 @@ const config = {
   module: {
     rules: [{
         test: /\.pug$/,
-        loader: 'pug-loader',
-        options: {
-          pretty: true,
-        },
+        use: [{
+          loader: 'html-loader'
+        }, {
+          loader: 'pug-html-loader',
+          options: {
+            exports: false
+          }
+        }]
       },
       {
         test: /\.(sa|sc|c)ss$/,
