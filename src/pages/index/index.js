@@ -12,3 +12,4 @@ import '../../components/paginator/paginator.scss';
 import '../../components/bullet-list/bullet-list.scss';
 import '../../components/advantage/advantage.scss';
 import '../../components/advantages-list/advantages-list.scss';
+import '../../components/comment/comment.scss';

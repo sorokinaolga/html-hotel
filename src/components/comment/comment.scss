@@ -1,0 +1,42 @@
+@import "../../styles/vars.scss";
+
+.comment {
+  font-size: $ff-sm;
+  line-height: 1.7;
+  color: $ff-palette-75;
+  display: grid;
+  grid-template-areas:
+    "picture header"
+    "button text";
+  grid-gap: $px10;
+  grid-template-columns: $px48 auto;
+
+  &__picture {
+    grid-area: picture;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $px48;
+    height: $px48;
+    overflow: hidden;
+    border-radius: $px32;
+    box-shadow: 0 $px10 $px20 $ff-palette-10;
+    border: 2px solid $color-white;
+  }
+
+  &__header {
+    grid-area: header;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__like-button {
+    grid-area: button;
+  }
+
+  &__text {
+    grid-area: text;
+  }
+}

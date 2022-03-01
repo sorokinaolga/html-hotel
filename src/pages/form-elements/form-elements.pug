@@ -9,6 +9,7 @@ include ../../components/rating/rating
 include ../../components/paginator/paginator
 include ../../components/bullet-list/bullet-list
 include ../../components/advantages-list/advantages-list
+include ../../components/comment/comment
 
 .form-elements
   section.form-elements__column
@@ -64,3 +65,11 @@ include ../../components/advantages-list/advantages-list
       {title: "Удобство", subtitle: "Окно в каждой из спален", icon: "location_city"}
     ])
   section.form-elements__column.form-elements__column--two
+    +comment({
+      authorName: "Мурад Сарафанов", 
+      authorImage: {src: "../../assets/images/avatars/man.webp", alt: "Фото автора отзыва Мурада Сарафанова", width: 48, height: 48},
+      date: "5 дней назад",
+      text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.",
+      countFavorites: 12,
+      isFavorite: true
+    })

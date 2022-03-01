@@ -1,0 +1,16 @@
+include ../like-button/like-button
+
+mixin comment(options)
+  - const {authorName, authorImage, date, text, countFavorites, isFavorite} = options;
+  .comment
+    figure.comment__picture
+      img(src= (authorImage.src) alt= authorImage.alt width= authorImage.width height= authorImage.height)
+    .comment__header
+      p.comment__name= authorName
+      p= date
+    .comment__like-button
+      +like-button({
+        count: countFavorites,
+        isFavorite
+      })
+    p.comment__text!= text
