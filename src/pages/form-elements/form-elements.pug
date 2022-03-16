@@ -10,6 +10,7 @@ include ../../components/paginator/paginator
 include ../../components/bullet-list/bullet-list
 include ../../components/advantages-list/advantages-list
 include ../../components/comment/comment
+include ../../components/checkbox-list/checkbox-list
 
 .form-elements
   section.form-elements__column
@@ -52,6 +53,34 @@ include ../../components/comment/comment
     +label({title: "Pagination"})
     +paginator({countOnPage: 12, countTotal: 180, currentPage: 1})
   section.form-elements__column
+    +checkbox-list({
+      label: "Expandable checkbox list",
+      isActive: false,
+      items: [
+        {name: "breakfast", label: 'Завтрак'},
+        {name: "table", label: 'Письменный стол', checked: true},
+        {name: "baby-chair", label: 'Стул для кормления', checked: true},
+        {name: "baby-bed", label: 'Кроватка', checked: true},
+        {name: "tv", label: 'Телевизор'},
+        {name: "shampoo", label: 'Шампунь'},
+        {name: "tv-2", label: 'Телевизор'},
+        {name: "shampoo-2", label: 'Шампунь'},
+      ]
+    })
+    +checkbox-list({
+      label: "Expandable checkbox list",
+      isActive: true,
+      items: [
+        {name: "breakfast", label: 'Завтрак'},
+        {name: "table", label: 'Письменный стол', checked: true},
+        {name: "baby-chair", label: 'Стул для кормления', checked: true},
+        {name: "baby-bed", label: 'Кроватка', checked: true},
+        {name: "tv", label: 'Телевизор'},
+        {name: "shampoo", label: 'Шампунь'},
+        {name: "tv-2", label: 'Телевизор'},
+        {name: "shampoo-2", label: 'Шампунь'},
+      ]
+    })
   section.form-elements__column
     +label({title: "Rich Checkbox Buttons"})
     +checkbox({label: "Широкий коридор", name: "availability", value: "wide-corridor", details: "Ширина коридоров в&nbsp;номере не&nbsp;менее 91&nbsp;см"})

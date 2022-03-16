@@ -1,0 +1,55 @@
+@import "../../styles/vars.scss";
+
+.checkbox-list {
+  font-size: $ff-sm;
+  color: $ff-palette-75;
+  user-select: none;
+
+  &__title {
+    padding: $px8 $px10 $px12 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__label {
+    font-size: $ff-xs;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $ff-palette;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__toggler {
+    border: none;
+    appearance: none;
+    user-select: none;
+    background: transparent;
+    color: $ff-palette-50;
+    display: inline-block;
+    transition: transform 0.1s ease-out;
+    cursor: pointer;
+  }
+
+  &__list {
+    display: none;
+    list-style: none;
+    width: 100%;
+  }
+
+  &__item {
+    padding-bottom: $px10;
+  }
+
+  &--active {
+    .checkbox-list__toggler {
+      transform: rotate(180deg);
+    }
+
+    .checkbox-list__list {
+      display: inline-block;
+    }
+  }
+}

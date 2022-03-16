@@ -1,0 +1,17 @@
+include ../checkbox/checkbox
+
+mixin checkbox-list(options = {})
+  - const { label, isActive = false, items = [] } = options;
+  - let blockClass = "checkbox-list";
+  if isActive 
+    - blockClass += " checkbox-list--active";
+
+  div(class= blockClass)
+    p.checkbox-list__title
+      span.checkbox-list__label= label
+      button(class= "checkbox-list__toggler" type= "button")
+        .material-icons= "keyboard_arrow_down"
+    ul.checkbox-list__list
+      each item in items
+        li.checkbox-list__item
+          +checkbox(item)
